@@ -1,0 +1,42 @@
+.table-top-msg{
+  font-size:$size13;
+  padding-top:13px;
+  
+  &.required{
+    font-size:$size12;
+    position:absolute;
+    top:45px;
+    right:30px;
+  }
+}
+
+.dash{
+  line-height:28px;
+  color:$gray2;
+}
+
+.icon{
+  display:inline-block;
+  
+  position:relative;
+  padding:2px;
+  
+  font-size:9px;
+  color:$white;
+  background:$dark;
+  
+  line-height:1;
+  
+  &:after{
+    content:"";
+    display:block;
+    width:6px;
+    height:4px;
+    
+    position:absolute;
+    left:30%;
+    bottom:-4px;
+    
+    background:url(../images/icon_tale.gif) no-repeat;
+  }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>BELPORT 관리자</title>
+
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="http://api.typolink.co.kr/css?family=RixSGo+L:400|RixSGo+M:400|RixSGo+B:400|RixSGo+EB:400">
+<link rel="stylesheet" href="../css/style.css" />
+
+<script src="../js/lib/jquery.library.min.js"></script>
+<script src="../js/function.min.js"></script>
+</head>
+<body>
+
+<div class="header-wrap">
+	<header class="header">
+		<h1 class="header-logo"><img src="../images/logo.png" alt="BELPORT" class="logo-image" /></h1>
+		
+		<!-- login/logout -->
+		<ul class="header-member">
+			<li class="header-member-item"><a href="#" class="header-member-link logout" title="로그아웃">MD그룹(홍길동)</a></li>
+			<li class="header-member-item"><a href="#" class="header-member-link modify" title="정보수정">정보수정</a></li>
+		</ul>
+		
+		<!-- out link -->
+		<ul class="header-outlink">
+			<li class="header-outlink-item"><a href="#" class="header-outlink-link shop" title="쇼핑몰바로가기">쇼핑몰바로가기</a></li>
+			<li class="header-outlink-item"><a href="#" class="header-outlink-link inicis" title="이니시스관리자">이니시스관리자</a></li>
+		</ul>
+		
+		<!-- global navigation -->
+		<nav class="header-gnb">
+			<ul class="header-gnb-list">
+				<li class="header-gnb-item side"><a href="#" class="header-gnb-link js-gnb on-left">운영관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb on">입점사관리</a></li>
+				<li class="header-gnb-item side"><a href="#" class="header-gnb-link js-gnb on-right">회원관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">상품관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">주문관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">리워드관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">프로모션관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">고객센터관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">전시관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">컨텐츠관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">벨포트관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">통계관리</a></li>
+			</ul>
+		</nav>	
+	</header>
+</div>
+
+<div class="main-wrap">
+<nav class="lnb">
+	<h2 class="lnb-title">상품관리</h2>
+	<!-- sub 1-depth -->
+	<ul class="lnb-list">
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link on">상품통합관리</a>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">신규상품등록</a>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상품승인관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인대기중 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인완료 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인반려 상품</a></li>
+			</ul>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상태별상품관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">판매중 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">판매중지 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">일시품절 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">최근변경 상품</a></li>
+			</ul>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">사은품통합관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">사은품 관리</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">사은품 지급관리</a></li>
+			</ul>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상품공지관리</a>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">카테고리관리</a>
+		</li>
+	</ul>
+	
+	<footer class="footer">
+		CopyRight &copy; 2015 BELPORT<br /> Co.,Ltd. All Rights Reserved.
+	</footer>
+</nav>
+
+
+
+
+<section class="main-section">
+	
+	<div class="location">
+		<div class="location-item"><a href="#" class="location-link">Home</a></div>
+		<div class="location-item">></div>
+		<div class="location-item"><a href="#" class="location-link">상품관리</a></div>
+		<div class="location-item">></div>
+		<div class="location-item"><a href="#" class="current">신규상품등록</a></div>
+	</div>
+	
+	<h3 class="section-title">신규상품등록</h3>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">카테고리 설정</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+			<tbody>
+			  <tr>
+			    <th scope="row" class="hr-table-th">카테고리</th>
+			    <td colspan="2" class="hr-table-td">
+			    	<select class="select">
+			    		<option>1차 분류</option>
+			    	</select>
+			    	<select class="select">
+			    		<option>2차 분류</option>
+			    	</select>
+			    	<select class="select">
+			    		<option>3차 분류</option>
+			    	</select>
+			    	<button type="button">추가하기</button>
+			    </td>
+			  </tr>
+			  <tr>
+			    <th rowspan="3" scope="row" class="hr-table-th">노출 카테고리 <span>*</span></th>
+			    <td class="hr-table-td">1. 스킨케어 > 미스트</td>
+			    <td class="hr-table-td">
+			    	<button type="button">대표 카테고리</button>
+			    	<div>
+			    		<input type="radio" />
+			    		<label>노출</label>
+			    	</div>
+			    	<div>
+			    		<input type="radio" />
+			    		<label>비노출</label>
+			    	</div>
+			    	<button type="button">삭제</button>
+			    </td>
+			  </tr>
+			  <tr>
+		    <td class="hr-table-td">2. 클렌징 > 립 &amp; 아이리무버</td>
+		    <td class="hr-table-td">
+		    	<button type="button">대표 카테고리 설정</button>
+		    	<div>
+		    		<input type="radio" />
+		    		<label>노출</label>
+		    	</div>
+		    	<div>
+		    		<input type="radio" />
+		    		<label>비노출</label>
+		    	</div>
+		    	<button type="button">삭제</button>		    	
+		    </td>
+		  </tr>
+			</tbody>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">상품기본정보입력</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">전시여부 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매상태 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매회원 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품명 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품명(영문) <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품관리코드 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품한줄설명</th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">브랜드선택 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">브랜드국가</th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">용량/단위</th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">원산지 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">제조사 </th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">판매사 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">제조일자 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">유통기한 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">판매정보 등록</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매기간 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매가 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">할인설정</th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">배송비 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">쿠폰사용여부 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		     <th scope="row" class="hr-table-th">포인트사용여부 <span>*</span></th>
+		     <td class="hr-table-td half-column"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">재고 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">옵션설정</th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">태그정보 등록</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">태그생성 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">등록태그</th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">상품이미지정보 등록</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+			
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">필수이미지 <span>*</span></th>
+		    <td rowspan="2" class="hr-table-td">
+		    	<img src="" alt="IMG" />
+		    </td>
+		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>ascd1234.jpg</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 1</th>
+		    <td rowspan="2" class="hr-table-td">
+		    	<img src="" alt="IMG" />
+		    </td>
+		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
+		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		  	<td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 2</th>
+		    <td rowspan="2" class="hr-table-td">
+		    	<img src="" alt="IMG" />
+		    </td>
+		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
+		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 3</th>
+		    <td rowspan="2" class="hr-table-td">
+		    	<img src="" alt="IMG" />
+		    </td>
+		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
+		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		  </tr>
+		  
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">연관상품 설정</h4>
+		
+		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">연관상품 선택 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td"></td>
+		   </tr>
+		</table>
+
+	</article>		
+	
+</section>
+
+
+</div>
+</body>
+</html>

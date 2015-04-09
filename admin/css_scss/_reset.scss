@@ -56,9 +56,11 @@ a{
   text-decoration:none;
 }
 select, input, button, textarea {
+  display:block;
   font-family:$font-stack-l;
   font-size:$size12;
   color:$dark;
+  box-sizing:border-box;
 }
 
 embed, object{
