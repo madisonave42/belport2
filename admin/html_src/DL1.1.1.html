@@ -442,15 +442,17 @@ include "header.html"
 				  <tr>
 				    <th scope="row" class="hr-table-th">재고수</th>
 				    <td class="hr-table-td half-column">
-							<div>
-			    			<input type="radio" />
-			    			<input type="text" class="input small" />
-			    			<span>개 미만</span>
-			    		</div>
-			    		<div>
-			    			<input type="radio" />
-			    			<label>해당사항 없음</label>
-			    		</div>
+							<div class="check-wrap left-float left">
+					    	<input id="rad-01" name="radio01" type="radio" class="radio-box" />
+					    	<label for="rad-01" class="radio-label radio-label-blank left-float">직접입력</label>
+			    			<input type="text" class="input small left-float" />
+			    			<span class="left-float">개 미만</span>
+				    	</div>
+
+				    	<div class="check-wrap left-float left">
+					    	<input id="rad-02" name="radio01" type="radio" class="radio-box" />
+					    	<label for="rad-02" class="radio-label">해당사항 없음</label>
+				    	</div>
 				    </td>
 				    <th scope="row" class="hr-table-th">검색어</th>
 				    <td class="hr-table-td half-column">
@@ -467,13 +469,13 @@ include "header.html"
 
 		</div>
 
-		<div class="table-wrap">
+		<div class="table-wrap popup-content-scroll">
 
 			<table class="table vt-table">
 			  <tr>
 			    <th scope="col" class="vt-table-th">
 			    	<div class="check-wrap left-float left">
-				    	<input id="chk-01" type="checkbox" class="check-box" />
+				    	<input id="chk-01" type="checkbox" class="check-box left-float" />
 				    	<label for="chk-01" class="check-label check-label-blank">선택</label>
 			    	</div>
 			    </th>
@@ -487,7 +489,7 @@ include "header.html"
 			  <tr>
 			    <td class="vt-table-td vt-table-center">
 			    	<div class="check-wrap left-float left">
-				    	<input id="chk-02" type="checkbox" class="check-box" />
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
 				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
 			    	</div>
 			    </td>
@@ -503,7 +505,7 @@ include "header.html"
 			  <tr>
 			    <td class="vt-table-td vt-table-center">
 			    	<div class="check-wrap left-float left">
-				    	<input id="chk-02" type="checkbox" class="check-box" />
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
 				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
 			    	</div>
 			    </td>
@@ -519,7 +521,7 @@ include "header.html"
 			  <tr>
 			    <td class="vt-table-td vt-table-center">
 			    	<div class="check-wrap left-float left">
-				    	<input id="chk-02" type="checkbox" class="check-box" />
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
 				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
 			    	</div>
 			    </td>
@@ -535,7 +537,151 @@ include "header.html"
 			  <tr>
 			    <td class="vt-table-td vt-table-center">
 			    	<div class="check-wrap left-float left">
-				    	<input id="chk-02" type="checkbox" class="check-box" />
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center"><span class="em">판매중</span></td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center"><span class="em">판매중</span></td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center">일시품절</td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
+				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
+			    	</div>
+			    </td>
+			    <td class="vt-table-td vt-table-center">9999</td>
+			    <td class="vt-table-td vt-table-center">12345</td>
+			    <td class="vt-table-td vt-table-center">
+			    	<img src="../images/icon_noimg.jpg" alt="" />
+			    </td>
+			    <td class="vt-table-td vt-table-center">아이오페 바이오에센스 3일 체험키트</td>
+			    <td class="vt-table-td vt-table-center"><span class="em">판매중</span></td>
+			    <td class="vt-table-td vt-table-center">200</td>
+			  </tr>
+			  <tr>
+			    <td class="vt-table-td vt-table-center">
+			    	<div class="check-wrap left-float left">
+				    	<input id="chk-02" type="checkbox" class="check-box left-float" />
 				    	<label for="chk-02" class="check-label check-label-blank">선택</label>
 			    	</div>
 			    </td>

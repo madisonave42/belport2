@@ -112,6 +112,10 @@
       background:$white;
     }
   }
+
+  &-label-blank {
+    text-indent:-9999px;
+  }
 }
 
 .btn{

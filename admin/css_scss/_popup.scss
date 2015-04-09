@@ -2,7 +2,6 @@
 	position:absolute;
 	top:5%;
 	left:50%;
-	padding-bottom:20px;
 	margin-left:-465px;
 	width:931px;
 	border:2px solid $dark;
@@ -19,6 +18,10 @@
 	}
 	&-content {
 		margin:30px;
+	}
+	&-content-scroll {
+		height:480px;
+		overflow:auto;
 	}
 	&-close {
 		position:absolute;

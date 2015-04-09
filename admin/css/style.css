@@ -475,6 +475,9 @@ embed, object {
   border-radius: 100%;
   background: #fff;
 }
+.radio-label-blank {
+  text-indent: -9999px;
+}
 
 .btn {
   height: 28px;
@@ -692,7 +695,6 @@ embed, object {
   position: absolute;
   top: 5%;
   left: 50%;
-  padding-bottom: 20px;
   margin-left: -465px;
   width: 931px;
   border: 2px solid #231f20;
@@ -710,6 +712,10 @@ embed, object {
 }
 .popup-content {
   margin: 30px;
+}
+.popup-content-scroll {
+  height: 480px;
+  overflow: auto;
 }
 .popup-close {
   position: absolute;
