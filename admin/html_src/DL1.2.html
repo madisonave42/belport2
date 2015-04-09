@@ -15,55 +15,73 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">카테고리 설정</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 			<tbody>
 			  <tr>
 			    <th scope="row" class="hr-table-th">카테고리</th>
 			    <td colspan="2" class="hr-table-td">
-			    	<select class="select">
-			    		<option>1차 분류</option>
+			    	<select class="select med left-float left">
+			    		<option>1차분류</option>
 			    	</select>
-			    	<select class="select">
-			    		<option>2차 분류</option>
+			    	<select class="select med left-float left">
+			    		<option>2차분류</option>
 			    	</select>
-			    	<select class="select">
-			    		<option>3차 분류</option>
+			    	<select class="select med left-float left">
+			    		<option>3차분류</option>
 			    	</select>
-			    	<button type="button">추가하기</button>
+				    <button type="button" class="btn btn-gray med left-float">추가하기</button>
 			    </td>
 			  </tr>
 			  <tr>
 			    <th rowspan="3" scope="row" class="hr-table-th">노출 카테고리 <span>*</span></th>
 			    <td class="hr-table-td">1. 스킨케어 > 미스트</td>
-			    <td class="hr-table-td">
-			    	<button type="button">대표 카테고리</button>
-			    	<div>
-			    		<input type="radio" />
-			    		<label>노출</label>
+			    <td class="hr-table-td half-column">
+			    	
+		    		<button type="button" class="btn btn-orange med left-float left">대표 카테고리</button>
+			    	
+			    	<div class="radio-group left-float left right">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-2-02" type="radio" class="radio-box" />
+					    	<label for="chk-2-02" class="radio-label">노출</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-2-03" type="radio" class="radio-box" />
+					    	<label for="chk-2-03" class="radio-label">비노출</label>
+			    		</div>
+			    		
 			    	</div>
-			    	<div>
-			    		<input type="radio" />
-			    		<label>비노출</label>
-			    	</div>
-			    	<button type="button">삭제</button>
+			    	
+		    		<button type="button" class="btn btn-border mini left-float right">삭제</button>
+			    	
 			    </td>
 			  </tr>
 			  <tr>
 		    <td class="hr-table-td">2. 클렌징 > 립 &amp; 아이리무버</td>
-		    <td class="hr-table-td">
-		    	<button type="button">대표 카테고리 설정</button>
-		    	<div>
-		    		<input type="radio" />
-		    		<label>노출</label>
-		    	</div>
-		    	<div>
-		    		<input type="radio" />
-		    		<label>비노출</label>
-		    	</div>
-		    	<button type="button">삭제</button>		    	
-		    </td>
+		    <td class="hr-table-td half-column">
+			    	
+		    		<button type="button" class="btn btn-gray med left-float left">대표 카테고리 설정</button>
+			    	
+			    	<div class="radio-group left-float left right">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-02" type="radio" class="radio-box" />
+					    	<label for="chk-3-02" class="radio-label">노출</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-3-03" type="radio" class="radio-box" />
+					    	<label for="chk-3-03" class="radio-label">비노출</label>
+			    		</div>
+			    		
+			    	</div>
+			    	
+		    		<button type="button" class="btn btn-border mini left-float right">삭제</button>
+			    	
+			    </td>
 		  </tr>
 			</tbody>
 		</table>
@@ -73,7 +91,7 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">상품기본정보입력</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 		   <tr>
@@ -135,7 +153,7 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">판매정보 등록</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 		   <tr>
@@ -173,7 +191,7 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">태그정보 등록</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 		   <tr>
@@ -191,7 +209,7 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">상품이미지정보 등록</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 			
@@ -250,7 +268,7 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">연관상품 설정</h4>
 		
-		<div class="required"><span class="required-mark">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
 		
 		<table class="table hr-table">
 		   <tr>

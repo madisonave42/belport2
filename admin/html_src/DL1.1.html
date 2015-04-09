@@ -3,6 +3,7 @@ include "header.html"
 <section class="main-section">
 	
 	<div class="location">
+
 		<div class="location-item"><a href="#" class="location-link">Home</a></div>
 		<div class="location-item">></div>
 		<div class="location-item"><a href="#" class="location-link">상품관리</a></div>
@@ -28,7 +29,7 @@ include "header.html"
 				    	<select class="select med left-float left">
 				    		<option>2차분류</option>
 				    	</select>
-				    	<select class="select med left-float last">
+				    	<select class="select med left-float">
 				    		<option>3차분류</option>
 				    	</select>
 				    </td>
@@ -69,7 +70,7 @@ include "header.html"
 				    	<select class="select med left-float left">
 				    		<option>연관상품</option>
 				    	</select>
-				    	<select class="select med left-float last">
+				    	<select class="select med left-float">
 				    		<option>재고</option>
 				    	</select>
 				    </td>
@@ -101,7 +102,7 @@ include "header.html"
 					    		<span class="icon">BEST</span>
 					    	</label>
 				    	</div>
-				    	<div class="check-wrap left-float left">
+				    	<div class="check-wrap left-float">
 					    	<input id="chk-1-05" type="checkbox" class="check-box" />
 					    	<label for="chk-1-05" class="check-label">
 					    		<span class="icon">HIT</span>
@@ -114,12 +115,12 @@ include "header.html"
 				    <td colspan="3" class="hr-table-td">
 				    	<div class="left-float left">
 				    		<input type="text" class="input med left-float left" />
-				    		<button type="button" class="left-float last btn btn-calendar">시작날짜</button>
+				    		<button type="button" class="left-float btn btn-calendar">시작날짜</button>
 				    	</div>
 				    	<div class="left-float left dash">-</div>
-				    	<div class="left-float left last">
+				    	<div class="left-float left ">
 				    		<input type="text" class="input med left-float left" />
-				    		<button type="button" class="left-float last btn btn-calendar">종료날짜</button>
+				    		<button type="button" class="left-float btn btn-calendar">종료날짜</button>
 				    	</div>
 				    </td>
 				  </tr>
@@ -216,12 +217,14 @@ include "header.html"
 				<a href="#">끝</a>
 			</div>
 			
-			<div>
-				<button type="button">엑셀 다운로드</button>
-				<button type="button">상품일괄 업로드</button>
-				<button type="button">재고 일괄관리</button>
-				<button type="button">상품복사</button>
-				<button type="button">삭제</button>
+			<div class="right-float">
+				
+				<button type="button" class="btn btn-border med left-float left">엑셀 다운로드</button>
+				<button type="button" class="btn btn-border med left-float left">상품일괄 업로드</button>
+				<button type="button" class="btn btn-border med left-float left">재고 일괄관리</button>
+				<button type="button" class="btn btn-dark med left-float left">상품복사</button>
+				<button type="button" class="btn btn-dark med left-float">삭제</button>
+			
 			</div>			
 			
 		</div>
@@ -231,78 +234,118 @@ include "header.html"
 	<article class="unit-area">
 		<h4 class="unit-title">일괄적용옵션</h4>
 	
-		<table class="table hr-table">
+		<table class="table hr-table bottom-margin">
 		  <tr>
 		    <th scope="row" class="hr-table-th">아이콘</th>
 		    <td colspan="3" class="hr-table-td">
 		    	
-		    	<div class="radio-group left-float left">
+		    	<div class="radio-group double-line left-float">
 		    		
 		    		<div class="check-wrap left-float left">
-		    			<span class="icon left-float left">무료배송</span>
+		    			<span class="icon">무료배송</span>
 		    		</div>
 		    		
 		    		<div class="check-wrap left-float left">
-				    	<input id="chk-2-01" type="checkbox" class="check-box" />
-				    	<label for="chk-2-01" class="check-label">적용안함</label>
+				    	<input id="chk-2-01" type="radio" class="radio-box" />
+				    	<label for="chk-2-01" class="radio-label">적용안함</label>
 			    	</div>
 
 		    		<div class="check-wrap left-float left">
-		    			<input id="chk-2-02" type="checkbox" class="check-box" />
-				    	<label for="chk-2-02" class="check-label">적용안함</label>
+		    			<input id="chk-2-02" type="radio" class="radio-box" />
+				    	<label for="chk-2-02" class="radio-label">노출</label>
+		    		</div>
+		    		
+		    		<div class="check-wrap left-float">
+		    			<input id="chk-2-03" type="radio" class="radio-box" />
+				    	<label for="chk-2-03" class="radio-label">비노출</label>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="radio-group double-line left-float">
+		    		
+		    		<div class="check-wrap left-float left">
+		    			<span class="icon">NEW</span>
 		    		</div>
 		    		
 		    		<div class="check-wrap left-float left">
-		    			<input id="chk-2-03" type="checkbox" class="check-box" />
-				    	<label for="chk-2-03" class="check-label">적용안함</label>
+				    	<input id="chk-3-01" type="radio" class="radio-box" />
+				    	<label for="chk-3-01" class="radio-label">적용안함</label>
+			    	</div>
+
+		    		<div class="check-wrap left-float left">
+		    			<input id="chk-3-02" type="radio" class="radio-box" />
+				    	<label for="chk-3-02" class="radio-label">노출</label>
+		    		</div>
+		    		
+		    		<div class="check-wrap left-float">
+		    			<input id="chk-3-03" type="radio" class="radio-box" />
+				    	<label for="chk-3-03" class="radio-label">비노출</label>
 		    		</div>
 		    	</div>
 		    	
-		    	<div>
-		    		<div>NEW</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>적용안함</label>
+		    	<div class="radio-group double-line left-float">
+		    		
+		    		<div class="check-wrap left-float left">
+		    			<span class="icon">BEST</span>
 		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>노출</label>
+		    		
+		    		<div class="check-wrap left-float left">
+				    	<input id="chk-4-01" type="radio" class="radio-box" />
+				    	<label for="chk-4-01" class="radio-label">적용안함</label>
+			    	</div>
+
+		    		<div class="check-wrap left-float left">
+		    			<input id="chk-4-02" type="radio" class="radio-box" />
+				    	<label for="chk-4-02" class="radio-label">노출</label>
 		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>비노출</label>
-		    		</div>
-		    	</div>
-		    	
-		    	<div>
-		    		<div>BEST</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>적용안함</label>
-		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>노출</label>
-		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>비노출</label>
+		    		
+		    		<div class="check-wrap left-float">
+		    			<input id="chk-4-03" type="radio" class="radio-box" />
+				    	<label for="chk-4-03" class="radio-label">비노출</label>
 		    		</div>
 		    	</div>
 		    	
-		    	<div>
-		    		<div>HIT</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>적용안함</label>
+		    	<div class="radio-group double-line left-float">
+		    		
+		    		<div class="check-wrap left-float left">
+		    			<span class="icon">HIT</span>
 		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>노출</label>
+		    		
+		    		<div class="check-wrap left-float left">
+				    	<input id="chk-5-01" type="radio" class="radio-box" />
+				    	<label for="chk-5-01" class="radio-label">적용안함</label>
+			    	</div>
+
+		    		<div class="check-wrap left-float left">
+		    			<input id="chk-5-02" type="radio" class="radio-box" />
+				    	<label for="chk-5-02" class="radio-label">노출</label>
 		    		</div>
-		    		<div>
-		    			<input type="radio" />
-		    			<label>비노출</label>
+		    		
+		    		<div class="check-wrap left-float">
+		    			<input id="chk-5-03" type="radio" class="radio-box" />
+				    	<label for="chk-5-03" class="radio-label">비노출</label>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="radio-group double-line left-float">
+		    		
+		    		<div class="check-wrap left-float left">
+		    			<span class="icon">MD's PICK</span>
+		    		</div>
+		    		
+		    		<div class="check-wrap left-float left">
+				    	<input id="chk-6-01" type="radio" class="radio-box" />
+				    	<label for="chk-6-01" class="radio-label">적용안함</label>
+			    	</div>
+
+		    		<div class="check-wrap left-float left">
+		    			<input id="chk-6-02" type="radio" class="radio-box" />
+				    	<label for="chk-6-02" class="radio-label">노출</label>
+		    		</div>
+		    		
+		    		<div class="check-wrap left-float">
+		    			<input id="chk-6-03" type="radio" class="radio-box" />
+				    	<label for="chk-6-03" class="radio-label">비노출</label>
 		    		</div>
 		    	</div>
 		    
@@ -311,69 +354,67 @@ include "header.html"
 		  <tr>
 		    <th scope="row" class="hr-table-th">무료배송</th>
 		    <td class="hr-table-td half-column">
-		    	
-	    		<div>
-	    			<input type="radio" />
-	    			<label>적용</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-7-01" type="radio" class="radio-box" />
+			    	<label for="chk-7-01" class="radio-label">적용</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>비노출</label>
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-7-02" type="radio" class="radio-box" />
+			    	<label for="chk-7-02" class="radio-label">미적용</label>
 	    		</div>
-	    		
 		    </td>
 		   	<th scope="row" class="hr-table-th">판매상태</th>
 		    <td class="hr-table-td half-column">
 		    	
-		    	<div>
-	    			<input type="radio" />
-	    			<label>판매중</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-01" type="radio" class="radio-box" />
+			    	<label for="chk-8-01" class="radio-label">판매중</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>판매중지</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-02" type="radio" class="radio-box" />
+			    	<label for="chk-8-02" class="radio-label">판매중지</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>일시품절</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-03" type="radio" class="radio-box" />
+			    	<label for="chk-8-03" class="radio-label">일시품절</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>오프라인전용</label>
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-8-04" type="radio" class="radio-box" />
+			    	<label for="chk-8-04" class="radio-label">오프라인전용</label>
 	    		</div>
-		    	
+		    		
 		    </td>
 		  </tr>
 		  <tr>
 		    <th scope="row" class="hr-table-th">쿠폰사용설정</th>
 		    <td class="hr-table-td half-column">
 		    	
-		    	<div>
-	    			<input type="radio" />
-	    			<label>쿠폰사용가능</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-9-01" type="radio" class="radio-box" />
+			    	<label for="chk-9-01" class="radio-label">쿠폰사용가능</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>쿠폰사용불가</label>
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-9-02" type="radio" class="radio-box" />
+			    	<label for="chk-9-02" class="radio-label">쿠폰사용불가</label>
 	    		</div>
 		    	
 		    </td>
 		    <th scope="row" class="hr-table-th">전시여부</th>
 		    <td class="hr-table-td half-column">
 		    	
-		    	<div>
-	    			<input type="radio" />
-	    			<label>전시</label>
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-10-01" type="radio" class="radio-box" />
+			    	<label for="chk-10-01" class="radio-label">전시</label>
 	    		</div>
 	    		
-	    		<div>
-	    			<input type="radio" />
-	    			<label>비전시</label>
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-10-02" type="radio" class="radio-box" />
+			    	<label for="chk-10-02" class="radio-label">비전시</label>
 	    		</div>
 		    	
 		    </td>
@@ -382,28 +423,28 @@ include "header.html"
 		    <th scope="row" class="hr-table-th">구매가능회원</th>
 		    <td colspan="3" class="hr-table-td">
 		    	
-		    	<div>
-	    			<input type="checkbox" />
-	    			<label>일반회원</label>
-	    		</div>
-	    		
-	    		<div>
-	    			<input type="checkbox" />
-	    			<label>VIP회원</label>
-	    		</div>
-	    		
-	    		<div>
-	    			<input type="checkbox" />
-	    			<label>임직원</label>
-	    		</div>
+					<div class="check-wrap left-float left">
+				  	<input id="chk-11-01" type="checkbox" class="check-box" />
+				  	<label for="chk-11-01" class="check-label">일반회원</label>
+					</div>
+				
+					<div class="check-wrap left-float left">
+						<input id="chk-11-02" type="checkbox" class="check-box" />
+				  	<label for="chk-11-02" class="check-label">VIP회원</label>
+					</div>
+					
+					<div class="check-wrap left-float">
+						<input id="chk-11-03" type="checkbox" class="check-box" />
+				  	<label for="chk-11-03" class="check-label">임직원</label>
+					</div>
 	    		
 		    </td>
 		  </tr>
 		</table>
 		
-		<div>
-			<button type="button">일괄처리내역</button>
-			<button type="button">적용하기</button>
+		<div class="right-float">
+			<button type="button" class="btn btn-border med left-float left">일괄처리내역</button>
+			<button type="button" class="btn btn-dark med left-float ">적용하기</button>
 		</div>
 	</article>
 </section>
