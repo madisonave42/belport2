@@ -21,7 +21,6 @@ if( navigator.userAgent.indexOf('Safari') > 0 ){
 	$('html').addClass('ie8');
 }
 
-
 $(function(){
 	
 	// GNB
@@ -51,3 +50,5 @@ $(function(){
 	});
 	
 });
+
+console.log(1)
