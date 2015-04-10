@@ -1,68 +1,73 @@
 .table{
-  
+
   &-wrap{
     &.bottom-margin{
       margin-bottom:10px;
     }
-    
+
     &:after{
       content:"";
       display:block;
       clear:both;
     }
   }
-  
+
   &-top{
     margin-bottom:10px;
-    
+
     &:after{
       content:"";
       display:block;
       clear:both;
     }
   }
-  
+
   width:100%;
   border-top:2px solid $dark;
-  
+
   &.bottom-margin{
     margin-bottom:10px;
   }
 }
 
 .hr-table{
-  
+
   &-th{
     width:145px;
     height:42px;
     border-bottom:1px solid $gray3;
+    font-family:$font-stack-b;
     background:$gray5;
   }
-  
+
   &-td{
     height:42px;
-    
+
     padding:0 15px;
-    
+
     border-bottom:1px solid $gray3;
-    
+
     &.half-column{
       width:374px;
     }
   }
-  
+
 }
 
 .vt-table{
-  
+
   &-th{
     height:48px;
     border-bottom:1px solid $dark;
+    font-family:$font-stack-b;
   }
-  
+
   &-td{
     height:42px;
     border-bottom:1px solid $gray3;
   }
-  
+
+  &-center {
+    text-align:center;
+  }
 }
