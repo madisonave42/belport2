@@ -96,55 +96,156 @@ include "header.html"
 		<table class="table hr-table">
 		   <tr>
 		     <th scope="row" class="hr-table-th">전시여부 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	
+					<div class="check-wrap left-float left">
+						<input id="chk-10-01" type="radio" class="radio-box" />
+						<label for="chk-10-01" class="radio-label">전시</label>
+					</div>
+					
+					<div class="check-wrap left-float">
+						<input id="chk-10-02" type="radio" class="radio-box" />
+						<label for="chk-10-02" class="radio-label">비전시</label>
+					</div>
+		     	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">판매상태 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-01" type="radio" class="radio-box" />
+			    	<label for="chk-8-01" class="radio-label">판매중</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-02" type="radio" class="radio-box" />
+			    	<label for="chk-8-02" class="radio-label">판매중지</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-03" type="radio" class="radio-box" />
+			    	<label for="chk-8-03" class="radio-label">일시품절</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-8-04" type="radio" class="radio-box" />
+			    	<label for="chk-8-04" class="radio-label">오프라인전용</label>
+	    		</div>
+		     	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">판매회원 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		    	
+					<div class="check-wrap left-float left">
+				  	<input id="chk-11-01" type="checkbox" class="check-box" />
+				  	<label for="chk-11-01" class="check-label">일반회원</label>
+					</div>
+				
+					<div class="check-wrap left-float left">
+						<input id="chk-11-02" type="checkbox" class="check-box" />
+				  	<label for="chk-11-02" class="check-label">VIP회원</label>
+					</div>
+					
+					<div class="check-wrap left-float">
+						<input id="chk-11-03" type="checkbox" class="check-box" />
+				  	<label for="chk-11-03" class="check-label">임직원</label>
+					</div>
+	    				     	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">상품명 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">상품명(영문) <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">상품관리코드 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">상품한줄설명</th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">브랜드선택 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<select class="select half-col-half left-float left">
+		     		<option>브랜드 선택</option>
+		     	</select>
+		     	<select class="select half-col-half left-float">
+		     		<option>라인 선택</option>
+		     	</select>
+		     </td>
 		     <th scope="row" class="hr-table-th">브랜드국가</th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">용량/단위</th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		     <th scope="row" class="hr-table-th">원산지 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	
+			    	<div class="radio-group left-float">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-01" type="radio" class="radio-box" />
+					    	<label for="chk-3-01" class="radio-label">국내</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-02" type="radio" class="radio-box" />
+					    	<label for="chk-3-02" class="radio-label">국외</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-3-03" type="radio" class="radio-box" />
+					    	<label for="chk-3-03" class="radio-label">기타</label>
+			    		</div>
+
+			    	</div>
+			    	
+			    	<input type="text" class="input half-col-half right-float" />		     
+			    		
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">제조사 </th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		     <th scope="row" class="hr-table-th">판매사 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">제조일자 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		     <th scope="row" class="hr-table-th">유통기한 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
 		   </tr>
 		</table>
 

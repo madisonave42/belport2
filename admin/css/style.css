@@ -527,10 +527,10 @@ embed, object {
 }
 
 .half-col-half {
-  width: 185px;
+  width: 182px;
 }
 
-.half-col-full {
+.full {
   width: 100%;
 }
 
