@@ -21,7 +21,7 @@
   display:inline-block;
   
   position:relative;
-  padding:2px;
+  padding:2px 4px;
   
   font-size:9px;
   color:$white;
@@ -42,3 +42,149 @@
     background:url(../images/icon_tale.gif) no-repeat;
   }
 }
+
+.list-in-table{
+  padding-top:10px;
+  
+  color:$gray2;
+  line-height:2.5;
+  list-style:disc inside;
+}
+
+.tag{
+  position:relative;
+  
+  padding:3px 4px;
+  
+  font-size:10px;
+  color:$white;
+  background:$dark;
+  
+  &-title{
+    float:left;
+    padding-right:5px;
+  }
+  
+  &:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
+
+.product-image{
+  width:75px;
+  height:75px;
+}
+
+.product-image-in-table{
+  width:34px;
+  height:34px;
+  
+  margin:0 auto;
+}
+
+.status{
+  
+  padding:2px 5px;
+  
+  font-family:$font-stack-b;
+  color:$white;
+  
+  &.on{
+    background:$orange;
+  }
+  
+  &.off{
+    background:$gray2;
+  }
+}
+
+  // page number module
+  page{
+    padding:0 72px;
+    display:inline-block;
+    position:relative;
+    text-align:center;
+    
+    &-num{
+      display:inline-block;
+      font-size:$desc;
+      width:32px;
+      height:32px;
+      line-height:30px;
+      
+      float:left;
+      margin-left:5px;
+      
+      &:first-child{
+        margin-left:0;
+      }
+      
+      &:hover, &:focus, &.is-current{
+        color:$white;
+        background:$red;
+      }
+    }
+    
+    &-first{
+      position:absolute;
+      top:0;
+      left:0;
+      width:32px;
+      height:32px;
+      background:url(../images/bg_page.png) no-repeat;
+      text-indent:-99999em;
+      
+      &.disable{
+        background-position:0px -33px;
+        cursor:default;
+      }
+    }
+    
+    &-prev{
+      position:absolute;
+      top:0;
+      left:36px;
+      width:32px;
+      height:32px;
+      background:url(../images/bg_page.png) no-repeat -36px 0px;
+      text-indent:-99999em;
+      
+      &.disable{
+        background-position:-36px -33px;
+        cursor:default;
+      }
+    }
+    
+    &-next{
+      position:absolute;
+      top:0;
+      right:36px;
+      width:32px;
+      height:32px;
+      background:url(../images/bg_page.png) no-repeat -252px 0px;
+      text-indent:-99999em;
+      
+      &.disable{
+        background-position:-252px -33px;
+        cursor:default;
+      }
+      
+    }
+    
+    &-last{
+      position:absolute;
+      top:0;
+      right:0;
+      width:32px;
+      height:32px;
+      background:url(../images/bg_page.png) no-repeat -288px 0px;
+      text-indent:-99999em;
+      
+      &.disable{
+        background-position:-288px -33px;
+        cursor:default;
+      }
+    }
+  }

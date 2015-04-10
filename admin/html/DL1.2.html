@@ -178,13 +178,13 @@
 			    	<div class="radio-group left-float left right">
 			    		
 			    		<div class="check-wrap left-float left">
-			    			<input id="chk-3-02" type="radio" class="radio-box" />
-					    	<label for="chk-3-02" class="radio-label">노출</label>
+			    			<input id="chk-3-04" type="radio" class="radio-box" />
+					    	<label for="chk-3-04" class="radio-label">노출</label>
 			    		</div>
 			    		
 			    		<div class="check-wrap left-float">
-			    			<input id="chk-3-03" type="radio" class="radio-box" />
-					    	<label for="chk-3-03" class="radio-label">비노출</label>
+			    			<input id="chk-3-05" type="radio" class="radio-box" />
+					    	<label for="chk-3-05" class="radio-label">비노출</label>
 			    		</div>
 			    		
 			    	</div>
@@ -369,31 +369,152 @@
 		<table class="table hr-table">
 		   <tr>
 		     <th scope="row" class="hr-table-th">판매기간 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-4-01" type="radio" class="radio-box" />
+					    	<label for="chk-4-01" class="radio-label">제한없음</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-4-02" type="radio" class="radio-box" />
+					    	<label for="chk-4-02" class="radio-label">제한있음</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="left-float right">
+				    	<div class="left-float left">
+				    		<input type="text" class="input med left-float left" />
+				    		<button type="button" class="left-float btn btn-calendar">시작날짜</button>
+				    	</div>
+				    	<div class="left-float left dash">-</div>
+				    	<div class="left-float left ">
+				    		<input type="text" class="input med left-float left" />
+				    		<button type="button" class="left-float btn btn-calendar">종료날짜</button>
+				    	</div>
+			    	</div>
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">※ 기간 후 비전시</div>
+			    	</div>  	
+
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">판매가 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input except-med left-float">
+		     	<div class="left-float right">
+		    		<div class="text-only">원</div>
+		    	</div>
+		     </td>
 		     <th scope="row" class="hr-table-th">할인설정</th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-5-01" type="radio" class="radio-box" />
+					    	<label for="chk-5-01" class="radio-label">할인가</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input small left-float left" />
+			    	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-6-01" type="radio" class="radio-box" />
+					    	<label for="chk-6-01" class="radio-label">할인율</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input small left-float" />
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">%</div>
+			    	</div> 
+			    	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">배송비 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	
+					<div class="check-wrap left-float left">
+						<input id="chk-7-01" type="radio" class="radio-box" />
+						<label for="chk-7-01" class="radio-label">유료배송 (2,500원)</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-7-02" type="radio" class="radio-box" />
+						<label for="chk-7-02" class="radio-label">무료배송</label>
+					</div>
+					    	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">쿠폰사용여부 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+					<div class="check-wrap left-float left">
+						<input id="chk-9-01" type="radio" class="radio-box" />
+						<label for="chk-9-01" class="radio-label">사용가능</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-9-02" type="radio" class="radio-box" />
+						<label for="chk-9-02" class="radio-label">사용불가</label>
+					</div>
+		     </td>
 		     <th scope="row" class="hr-table-th">포인트사용여부 <span>*</span></th>
-		     <td class="hr-table-td half-column"></td>
+		     <td class="hr-table-td half-column">
+					<div class="check-wrap left-float left">
+						<input id="chk-12-01" type="radio" class="radio-box" />
+						<label for="chk-12-01" class="radio-label">사용가능</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-12-02" type="radio" class="radio-box" />
+						<label for="chk-12-02" class="radio-label">사용불가</label>
+					</div>
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">재고 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td tall">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-16-01" type="radio" class="radio-box" />
+					    	<label for="chk-16-01" class="radio-label">제한없음</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-16-02" type="radio" class="radio-box" />
+					    	<label for="chk-16-02" class="radio-label">설정</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input med left-float" />
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">개</div>
+			    	</div>
+			    	
+			    	<ul class="list-in-table clearfix">
+			    		<li>재고가 0이 되면 상품상태가 자동으로 품절상태로 변경됩니다.</li>
+			    		<li>옵션별 재고가 있을경우 합산된 재고가 노출됩니다. (제한없음 재고 설정시 전체 재고는 제한없음으로 노출됨)</li>
+			    		<li>옵션별 재고각 있을경우 옵션의 원 상품 재고가 소진될 경우 품절처리됩니다.</li>
+			    	</ul>
+			    	     	
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">옵션설정</th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<button type="button" class="btn btn-gray med left-float">옵션등록/수정</button>
+		     	
+		     	<div class="left-float right">
+		    		<div class="text-only em">※ 등록된 옵션이 존재합니다.</div>
+		    	</div>
+		     	
+		     </td>
 		   </tr>
 		</table>
 
@@ -407,11 +528,22 @@
 		<table class="table hr-table">
 		   <tr>
 		     <th scope="row" class="hr-table-th">태그생성 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<button type="button" class="btn btn-gray med left-float">태그 등록</button>
+		     </td>
 		   </tr>
 		   <tr>
 		     <th scope="row" class="hr-table-th">등록태그</th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+		     	<div class="tag left-float left">
+		     		<span class="tag-title">스킨</span>
+		     		<button type="button" class="btn-tag-delete">delete</button>
+		     	</div>
+		     	<div class="tag left-float left">
+		     		<span class="tag-title">안티에이징</span>
+		     		<button type="button" class="btn-tag-delete">delete</button>
+		     	</div>
+		     </td>
 		   </tr>
 		</table>
 
@@ -426,50 +558,58 @@
 			
 		  <tr>
 		    <th rowspan="2" scope="row" class="hr-table-th">필수이미지 <span>*</span></th>
-		    <td rowspan="2" class="hr-table-td">
-		    	<img src="" alt="IMG" />
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
 		    </td>
-		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
 				<td class="hr-table-td">사이즈 : 000px * 000px</td>
 		  </tr>
 		  <tr>
-		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>ascd1234.jpg</span></td>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
 		  </tr>
 		  
 		  <tr>
 		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 1</th>
-		    <td rowspan="2" class="hr-table-td">
-		    	<img src="" alt="IMG" />
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
 		    </td>
-		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
-		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
 		  </tr>
 		  <tr>
-		  	<td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
 		  </tr>
 		  
 		  <tr>
 		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 2</th>
-		    <td rowspan="2" class="hr-table-td">
-		    	<img src="" alt="IMG" />
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
 		    </td>
-		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
-		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
 		  </tr>
 		  <tr>
-		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
 		  </tr>
 		  
 		  <tr>
 		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 3</th>
-		    <td rowspan="2" class="hr-table-td">
-		    	<img src="" alt="IMG" />
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
 		    </td>
-		    <td class="hr-table-td"><button type="button">찾아보기</button></td>
-		    <td class="hr-table-td">사이즈 : 000px * 000px</td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
 		  </tr>
 		  <tr>
-		    <td colspan="2" class="hr-table-td">등록된 파일 : <span>등록된 파일 없음</span></td>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
 		  </tr>
 		  
 		</table>
@@ -484,11 +624,29 @@
 		<table class="table hr-table">
 		   <tr>
 		     <th scope="row" class="hr-table-th">연관상품 선택 <span>*</span></th>
-		     <td colspan="3" class="hr-table-td"></td>
+		     <td colspan="3" class="hr-table-td">
+					<div class="check-wrap left-float left">
+						<input id="chk-13-01" type="radio" class="radio-box" />
+						<label for="chk-13-01" class="radio-label">설정안함</label>
+					</div>
+					<div class="check-wrap left-float left">
+						<input id="chk-13-02" type="radio" class="radio-box" />
+						<label for="chk-13-02" class="radio-label">상품으로 설정</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-13-03" type="radio" class="radio-box" />
+						<label for="chk-13-03" class="radio-label">태그로 설정</label>
+					</div>	     	
+		     </td>
 		   </tr>
 		</table>
 
-	</article>		
+	</article>
+	
+	<div class="bottom-btn-wrap">
+		<button type="button" class="btn btn-dark inline med">등록</button>
+		<button type="button" class="btn btn-border inline med">취소</button>
+	</div>
 	
 </section>
 
