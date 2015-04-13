@@ -36,11 +36,14 @@ $(function(){
 		},
 		
 		mouseleave : function(){
-			
+
+			var $gnbLink = $('.header-gnb-link');
+			var $gnbList = $('.header-gnb-list');
+
 			$('.header-gnb-item').removeClass('side');
-			$('.header-gnb-link').removeClass('on').removeClass('on-left').removeClass('on-right');
-			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
-			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
+			$gnbLink.removeClass('on').removeClass('on-left').removeClass('on-right');
+			$gnbLink.eq( $gnbList.data( 'current') ).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
+			$gnbLink.eq( $gnbList.data( 'current') ).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
 			
 		}
 		
