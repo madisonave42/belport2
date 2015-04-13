@@ -100,91 +100,91 @@
   }
 }
 
-  // page number module
-  page{
-    padding:0 72px;
+// page number module
+.page{
+  padding:0 72px;
+  display:block;
+  position:relative;
+  text-align:center;
+  
+  &-num{
     display:inline-block;
-    position:relative;
-    text-align:center;
+    //font-size:$desc;
+    width:32px;
+    height:32px;
+    line-height:30px;
     
-    &-num{
-      display:inline-block;
-      font-size:$desc;
-      width:32px;
-      height:32px;
-      line-height:30px;
-      
-      float:left;
-      margin-left:5px;
-      
-      &:first-child{
-        margin-left:0;
-      }
-      
-      &:hover, &:focus, &.is-current{
-        color:$white;
-        background:$red;
-      }
+    float:left;
+    margin-left:5px;
+    
+    &:first-child{
+      margin-left:0;
     }
     
-    &-first{
-      position:absolute;
-      top:0;
-      left:0;
-      width:32px;
-      height:32px;
-      background:url(../images/bg_page.png) no-repeat;
-      text-indent:-99999em;
-      
-      &.disable{
-        background-position:0px -33px;
-        cursor:default;
-      }
-    }
-    
-    &-prev{
-      position:absolute;
-      top:0;
-      left:36px;
-      width:32px;
-      height:32px;
-      background:url(../images/bg_page.png) no-repeat -36px 0px;
-      text-indent:-99999em;
-      
-      &.disable{
-        background-position:-36px -33px;
-        cursor:default;
-      }
-    }
-    
-    &-next{
-      position:absolute;
-      top:0;
-      right:36px;
-      width:32px;
-      height:32px;
-      background:url(../images/bg_page.png) no-repeat -252px 0px;
-      text-indent:-99999em;
-      
-      &.disable{
-        background-position:-252px -33px;
-        cursor:default;
-      }
-      
-    }
-    
-    &-last{
-      position:absolute;
-      top:0;
-      right:0;
-      width:32px;
-      height:32px;
-      background:url(../images/bg_page.png) no-repeat -288px 0px;
-      text-indent:-99999em;
-      
-      &.disable{
-        background-position:-288px -33px;
-        cursor:default;
-      }
+    &:hover, &:focus, &.on{
+      color:$white;
+      background:$dark;
     }
   }
+  
+  &-first{
+    position:absolute;
+    top:0;
+    left:0;
+    width:32px;
+    height:32px;
+    background:url(../images/bg_page.png) no-repeat;
+    text-indent:-99999em;
+    
+    &.disable{
+      background-position:0px -33px;
+      cursor:default;
+    }
+  }
+  
+  &-prev{
+    position:absolute;
+    top:0;
+    left:36px;
+    width:32px;
+    height:32px;
+    background:url(../images/bg_page.png) no-repeat -36px 0px;
+    text-indent:-99999em;
+    
+    &.disable{
+      background-position:-36px -33px;
+      cursor:default;
+    }
+  }
+  
+  &-next{
+    position:absolute;
+    top:0;
+    right:36px;
+    width:32px;
+    height:32px;
+    background:url(../images/bg_page.png) no-repeat -252px 0px;
+    text-indent:-99999em;
+    
+    &.disable{
+      background-position:-252px -33px;
+      cursor:default;
+    }
+    
+  }
+  
+  &-last{
+    position:absolute;
+    top:0;
+    right:0;
+    width:32px;
+    height:32px;
+    background:url(../images/bg_page.png) no-repeat -288px 0px;
+    text-indent:-99999em;
+    
+    &.disable{
+      background-position:-288px -33px;
+      cursor:default;
+    }
+  }
+}

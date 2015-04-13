@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>BELPORT 관리자</title>
+
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="http://api.typolink.co.kr/css?family=RixSGo+L:400|RixSGo+M:400|RixSGo+B:400|RixSGo+EB:400">
+<link rel="stylesheet" href="../css/style.css" />
+
+<script src="../js/lib/jquery.library.min.js"></script>
+<script src="../js/function.min.js"></script>
+</head>
+<body>
+
+<div class="header-wrap">
+	<header class="header">
+		<h1 class="header-logo"><img src="../images/logo.png" alt="BELPORT" class="logo-image" /></h1>
+		
+		<!-- login/logout -->
+		<ul class="header-member">
+			<li class="header-member-item"><a href="#" class="header-member-link logout" title="로그아웃">MD그룹(홍길동)</a></li>
+			<li class="header-member-item"><a href="#" class="header-member-link modify" title="정보수정">정보수정</a></li>
+		</ul>
+		
+		<!-- out link -->
+		<ul class="header-outlink">
+			<li class="header-outlink-item"><a href="#" class="header-outlink-link shop" title="쇼핑몰바로가기">쇼핑몰바로가기</a></li>
+			<li class="header-outlink-item"><a href="#" class="header-outlink-link inicis" title="이니시스관리자">이니시스관리자</a></li>
+		</ul>
+		
+		<!-- global navigation -->
+		<nav class="header-gnb">
+			<ul class="header-gnb-list">
+				<li class="header-gnb-item side"><a href="#" class="header-gnb-link js-gnb on-left">운영관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb on">입점사관리</a></li>
+				<li class="header-gnb-item side"><a href="#" class="header-gnb-link js-gnb on-right">회원관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">상품관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">주문관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">리워드관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">프로모션관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">고객센터관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">전시관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">컨텐츠관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">벨포트관리</a></li>
+				<li class="header-gnb-item"><a href="#" class="header-gnb-link js-gnb">통계관리</a></li>
+			</ul>
+		</nav>	
+	</header>
+</div>
+
+<div class="main-wrap">
+<nav class="lnb">
+	<h2 class="lnb-title">상품관리</h2>
+	<!-- sub 1-depth -->
+	<ul class="lnb-list">
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link on">상품통합관리</a>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">신규상품등록</a>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상품승인관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인대기중 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인완료 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">승인반려 상품</a></li>
+			</ul>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상태별상품관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">판매중 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">판매중지 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">일시품절 상품</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">최근변경 상품</a></li>
+			</ul>
+		</li>
+		<!-- having 2-depth -->
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">사은품통합관리</a>
+			<!-- sub 2-depth -->
+			<ul class="lnb-sub">
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">사은품 관리</a></li>
+				<li class="lnb-sub-item"><a href="#" class="lnb-sub-link">사은품 지급관리</a></li>
+			</ul>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">상품공지관리</a>
+		</li>
+		<li class="lnb-list-item">
+			<a href="#" class="lnb-list-link">카테고리관리</a>
+		</li>
+	</ul>
+	
+	<footer class="footer">
+		CopyRight &copy; 2015 BELPORT<br /> Co.,Ltd. All Rights Reserved.
+	</footer>
+</nav>
+
+
+
+
+<section class="main-section">
+	
+	<div class="location">
+		<div class="location-item"><a href="#" class="location-link">Home</a></div>
+		<div class="location-item">></div>
+		<div class="location-item"><a href="#" class="location-link">상품관리</a></div>
+		<div class="location-item">></div>
+		<div class="location-item"><a href="#" class="current">신규상품등록</a></div>
+	</div>
+	
+	<h3 class="section-title">신규상품등록</h3>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">카테고리 설정</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+			<tbody>
+			  <tr>
+			    <th scope="row" class="hr-table-th">카테고리</th>
+			    <td colspan="2" class="hr-table-td">
+			    	<select class="select med left-float left">
+			    		<option>1차분류</option>
+			    	</select>
+			    	<select class="select med left-float left">
+			    		<option>2차분류</option>
+			    	</select>
+			    	<select class="select med left-float left">
+			    		<option>3차분류</option>
+			    	</select>
+				    <button type="button" class="btn btn-gray med left-float">추가하기</button>
+			    </td>
+			  </tr>
+			  <tr>
+			    <th rowspan="3" scope="row" class="hr-table-th">노출 카테고리 <span>*</span></th>
+			    <td class="hr-table-td">1. 스킨케어 > 미스트</td>
+			    <td class="hr-table-td half-column">
+			    	
+		    		<button type="button" class="btn btn-orange med left-float left">대표 카테고리</button>
+			    	
+			    	<div class="radio-group left-float left right">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-2-02" type="radio" class="radio-box" />
+					    	<label for="chk-2-02" class="radio-label">노출</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-2-03" type="radio" class="radio-box" />
+					    	<label for="chk-2-03" class="radio-label">비노출</label>
+			    		</div>
+			    		
+			    	</div>
+			    	
+		    		<button type="button" class="btn btn-border mini left-float right">삭제</button>
+			    	
+			    </td>
+			  </tr>
+			  <tr>
+		    <td class="hr-table-td">2. 클렌징 > 립 &amp; 아이리무버</td>
+		    <td class="hr-table-td half-column">
+			    	
+		    		<button type="button" class="btn btn-gray med left-float left">대표 카테고리 설정</button>
+			    	
+			    	<div class="radio-group left-float left right">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-04" type="radio" class="radio-box" />
+					    	<label for="chk-3-04" class="radio-label">노출</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-3-05" type="radio" class="radio-box" />
+					    	<label for="chk-3-05" class="radio-label">비노출</label>
+			    		</div>
+			    		
+			    	</div>
+			    	
+		    		<button type="button" class="btn btn-border mini left-float right">삭제</button>
+			    	
+			    </td>
+		  </tr>
+			</tbody>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">상품기본정보입력</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">전시여부 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	
+					<div class="check-wrap left-float left">
+						<input id="chk-10-01" type="radio" class="radio-box" />
+						<label for="chk-10-01" class="radio-label">전시</label>
+					</div>
+					
+					<div class="check-wrap left-float">
+						<input id="chk-10-02" type="radio" class="radio-box" />
+						<label for="chk-10-02" class="radio-label">비전시</label>
+					</div>
+		     	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매상태 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-01" type="radio" class="radio-box" />
+			    	<label for="chk-8-01" class="radio-label">판매중</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-02" type="radio" class="radio-box" />
+			    	<label for="chk-8-02" class="radio-label">판매중지</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float left">
+	    			<input id="chk-8-03" type="radio" class="radio-box" />
+			    	<label for="chk-8-03" class="radio-label">일시품절</label>
+	    		</div>
+	    		
+	    		<div class="check-wrap left-float">
+	    			<input id="chk-8-04" type="radio" class="radio-box" />
+			    	<label for="chk-8-04" class="radio-label">오프라인전용</label>
+	    		</div>
+		     	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매회원 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		    	
+					<div class="check-wrap left-float left">
+				  	<input id="chk-11-01" type="checkbox" class="check-box" />
+				  	<label for="chk-11-01" class="check-label">일반회원</label>
+					</div>
+				
+					<div class="check-wrap left-float left">
+						<input id="chk-11-02" type="checkbox" class="check-box" />
+				  	<label for="chk-11-02" class="check-label">VIP회원</label>
+					</div>
+					
+					<div class="check-wrap left-float">
+						<input id="chk-11-03" type="checkbox" class="check-box" />
+				  	<label for="chk-11-03" class="check-label">임직원</label>
+					</div>
+	    				     	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품명 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품명(영문) <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품관리코드 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">상품한줄설명</th>
+		     <td colspan="3" class="hr-table-td">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">브랜드선택 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	<select class="select half-col-half left-float left">
+		     		<option>브랜드 선택</option>
+		     	</select>
+		     	<select class="select half-col-half left-float">
+		     		<option>라인 선택</option>
+		     	</select>
+		     </td>
+		     <th scope="row" class="hr-table-th">브랜드국가</th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">용량/단위</th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		     <th scope="row" class="hr-table-th">원산지 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	
+			    	<div class="radio-group left-float">
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-01" type="radio" class="radio-box" />
+					    	<label for="chk-3-01" class="radio-label">국내</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-3-02" type="radio" class="radio-box" />
+					    	<label for="chk-3-02" class="radio-label">국외</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-3-03" type="radio" class="radio-box" />
+					    	<label for="chk-3-03" class="radio-label">기타</label>
+			    		</div>
+
+			    	</div>
+			    	
+			    	<input type="text" class="input half-col-half right-float" />		     
+			    		
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">제조사 </th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		     <th scope="row" class="hr-table-th">판매사 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">제조일자 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		     <th scope="row" class="hr-table-th">유통기한 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input full" />
+		     </td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">판매정보 등록</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매기간 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-4-01" type="radio" class="radio-box" />
+					    	<label for="chk-4-01" class="radio-label">제한없음</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-4-02" type="radio" class="radio-box" />
+					    	<label for="chk-4-02" class="radio-label">제한있음</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="left-float right">
+				    	<div class="left-float left">
+				    		<input type="text" class="input med left-float left" />
+				    		<button type="button" class="left-float btn btn-calendar">시작날짜</button>
+				    	</div>
+				    	<div class="left-float left dash">-</div>
+				    	<div class="left-float left ">
+				    		<input type="text" class="input med left-float left" />
+				    		<button type="button" class="left-float btn btn-calendar">종료날짜</button>
+				    	</div>
+			    	</div>
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">※ 기간 후 비전시</div>
+			    	</div>  	
+
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">판매가 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+		     	<input type="text" class="input except-med left-float">
+		     	<div class="left-float right">
+		    		<div class="text-only">원</div>
+		    	</div>
+		     </td>
+		     <th scope="row" class="hr-table-th">할인설정</th>
+		     <td class="hr-table-td half-column">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-5-01" type="radio" class="radio-box" />
+					    	<label for="chk-5-01" class="radio-label">할인가</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input small left-float left" />
+			    	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float">
+			    			<input id="chk-6-01" type="radio" class="radio-box" />
+					    	<label for="chk-6-01" class="radio-label">할인율</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input small left-float" />
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">%</div>
+			    	</div> 
+			    	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">배송비 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	
+					<div class="check-wrap left-float left">
+						<input id="chk-7-01" type="radio" class="radio-box" />
+						<label for="chk-7-01" class="radio-label">유료배송 (2,500원)</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-7-02" type="radio" class="radio-box" />
+						<label for="chk-7-02" class="radio-label">무료배송</label>
+					</div>
+					    	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">쿠폰사용여부 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+					<div class="check-wrap left-float left">
+						<input id="chk-9-01" type="radio" class="radio-box" />
+						<label for="chk-9-01" class="radio-label">사용가능</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-9-02" type="radio" class="radio-box" />
+						<label for="chk-9-02" class="radio-label">사용불가</label>
+					</div>
+		     </td>
+		     <th scope="row" class="hr-table-th">포인트사용여부 <span>*</span></th>
+		     <td class="hr-table-td half-column">
+					<div class="check-wrap left-float left">
+						<input id="chk-12-01" type="radio" class="radio-box" />
+						<label for="chk-12-01" class="radio-label">사용가능</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-12-02" type="radio" class="radio-box" />
+						<label for="chk-12-02" class="radio-label">사용불가</label>
+					</div>
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">재고 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td tall">
+		     	
+			    	<div class="radio-group left-float left">
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-16-01" type="radio" class="radio-box" />
+					    	<label for="chk-16-01" class="radio-label">제한없음</label>
+			    		</div>
+			    		
+			    		<div class="check-wrap left-float left">
+			    			<input id="chk-16-02" type="radio" class="radio-box" />
+					    	<label for="chk-16-02" class="radio-label">설정</label>
+			    		</div>
+			    	</div>
+			    	
+			    	<input type="text" class="input med left-float" />
+			    	
+			    	<div class="left-float right">
+			    		<div class="text-only">개</div>
+			    	</div>
+			    	
+			    	<ul class="list-in-table clearfix">
+			    		<li>재고가 0이 되면 상품상태가 자동으로 품절상태로 변경됩니다.</li>
+			    		<li>옵션별 재고가 있을경우 합산된 재고가 노출됩니다. (제한없음 재고 설정시 전체 재고는 제한없음으로 노출됨)</li>
+			    		<li>옵션별 재고각 있을경우 옵션의 원 상품 재고가 소진될 경우 품절처리됩니다.</li>
+			    	</ul>
+			    	     	
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">옵션설정</th>
+		     <td colspan="3" class="hr-table-td">
+		     	<button type="button" class="btn btn-gray med left-float">옵션등록/수정</button>
+		     	
+		     	<div class="left-float right">
+		    		<div class="text-only em">※ 등록된 옵션이 존재합니다.</div>
+		    	</div>
+		     	
+		     </td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">태그정보 등록</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">태그생성 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+		     	<button type="button" class="btn btn-gray med left-float">태그 등록</button>
+		     </td>
+		   </tr>
+		   <tr>
+		     <th scope="row" class="hr-table-th">등록태그</th>
+		     <td colspan="3" class="hr-table-td">
+		     	<div class="tag left-float left">
+		     		<span class="tag-title">스킨</span>
+		     		<button type="button" class="btn-tag-delete">delete</button>
+		     	</div>
+		     	<div class="tag left-float left">
+		     		<span class="tag-title">안티에이징</span>
+		     		<button type="button" class="btn-tag-delete">delete</button>
+		     	</div>
+		     </td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">상품이미지정보 등록</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+			
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">필수이미지 <span>*</span></th>
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
+		    </td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 1</th>
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
+		    </td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 2</th>
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
+		    </td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
+		  </tr>
+		  
+		  <tr>
+		    <th rowspan="2" scope="row" class="hr-table-th">추가이미지 3</th>
+		    <td rowspan="2" class="hr-table-td image">
+		    	<img src="../images/bg_image_blank.gif" alt="IMG" class="product-image" />
+		    </td>
+		    <td class="hr-table-td no-padding">
+		    	<button type="button" class="btn btn-gray med left-float">찾아보기</button>
+		    </td>
+				<td class="hr-table-td">사이즈 : 000px * 000px</td>
+		  </tr>
+		  <tr>
+		    <td colspan="2" class="hr-table-td no-padding">등록된 파일 : <span class="em">ascd1234.jpg</span></td>
+		  </tr>
+		  
+		</table>
+
+	</article>
+	
+	<article class="unit-area">
+		<h4 class="unit-title">연관상품 설정</h4>
+		
+		<div class="table-top-msg required"><span class="em">*</span> 표시는 필수로 입력하셔야 합니다.</div>
+		
+		<table class="table hr-table">
+		   <tr>
+		     <th scope="row" class="hr-table-th">연관상품 선택 <span>*</span></th>
+		     <td colspan="3" class="hr-table-td">
+					<div class="check-wrap left-float left">
+						<input id="chk-13-01" type="radio" class="radio-box" />
+						<label for="chk-13-01" class="radio-label">설정안함</label>
+					</div>
+					<div class="check-wrap left-float left">
+						<input id="chk-13-02" type="radio" class="radio-box" />
+						<label for="chk-13-02" class="radio-label">상품으로 설정</label>
+					</div>
+					<div class="check-wrap left-float">
+						<input id="chk-13-03" type="radio" class="radio-box" />
+						<label for="chk-13-03" class="radio-label">태그로 설정</label>
+					</div>	     	
+		     </td>
+		   </tr>
+		</table>
+
+	</article>
+	
+	<div class="bottom-btn-wrap">
+		<button type="button" class="btn btn-dark inline med">등록</button>
+		<button type="button" class="btn btn-border inline med">취소</button>
+	</div>
+	
+</section>
+
+
+</div>
+</body>
+</html>
