@@ -439,6 +439,7 @@ body {
   padding: 2px 5px;
   font-family: "RixSGo B", "Dotum", sans-serif;
   color: #fff;
+  line-height: 1.2;
 }
 .status.on {
   background: #ed6851;
@@ -650,6 +651,7 @@ body {
 }
 .btn.inline {
   display: inline-block;
+  line-height: 1.2;
 }
 .btn-calendar {
   width: 15px;
